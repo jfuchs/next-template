@@ -8,3 +8,10 @@ some stuff I like 90% of the time I start a react app:
 - a jsconfig for absolute paths (e.g., `@/src/components/app`)
 - folder structure with `components`, `hooks`, & `pages` inside `src/`
 - an `App` component and a `useAppState` hook
+
+## Howto
+
+- `git clone` this repo
+- `git remote -D origin`
+- Update the package name in `package.json`
+- Update this README to something reasonable
