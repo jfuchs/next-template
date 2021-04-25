@@ -10,5 +10,5 @@ export const useAppState = (): [
   Dispatch<CounterAction>
 ] => {
   const [counterState, dispatch] = useReducer(counterReducer, newCounterState())
-  return [{ message: "Hello", count: counterState.count }, dispatch] // TODO memo
+  return [{ message: "Hello, world!", count: counterState.count }, dispatch] // TODO memo
 }
