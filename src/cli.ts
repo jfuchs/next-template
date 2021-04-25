@@ -1,3 +1,10 @@
-import { range } from "lodash"
+import { counterReducer, newCounterState } from "@/src/biz/counterReducer"
+import { times } from "lodash"
 
-console.log(range(5))
+let state = newCounterState()
+
+times(5, () => {
+  const oldCount = state.count
+  state = counterReducer(state, { type: "increment", delta: 2 })
+  console.warn(`${oldCount} → ${state.count}`)
+})
