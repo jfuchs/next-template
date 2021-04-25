@@ -1,5 +1,5 @@
 import { counterReducer, newCounterState } from "@/src/biz/counterReducer"
-import { times } from "lodash"
+import times from "lodash/times"
 
 describe("counterReducer", () => {
   test("counter increments when no delta is specified", () => {
