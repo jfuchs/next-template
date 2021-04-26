@@ -1,0 +1,22 @@
+extends:
+  - prettier
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:import/typescript
+plugins:
+  - prettier
+  - import
+rules:
+  prettier/prettier:
+    - error
+  import/order:
+    - error
+parser: "@typescript-eslint/parser"
+settings:
+  import/parsers:
+    "@typescript-eslint/parser":
+      - "*.ts"
+      - "*.tsx"
+  import/resolver:
+    typescript:
+      alwaysTryTypes: true

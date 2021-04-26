@@ -1,9 +1,9 @@
+import { Dispatch, useReducer } from "react"
 import {
   CounterAction,
   counterReducer,
   newCounterState,
 } from "@/src/biz/counterReducer"
-import { Dispatch, useReducer } from "react"
 
 export const useAppState = (): [
   { message: string; count: number },
