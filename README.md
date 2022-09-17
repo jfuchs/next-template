@@ -19,6 +19,6 @@ some stuff I like 90% of the time I start a react app:
 ## Howto
 
 - `git clone` this repo
-- `git remote -D origin`
+- `git remote remove origin`
 - Update the package name in `package.json`
 - Update this README to something reasonable
